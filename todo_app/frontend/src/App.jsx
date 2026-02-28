@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { CheckCircle2, Circle, Trash2, Plus, Sparkles } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import './index.css';
 
 const API_URL = 'http://localhost:8000/todos';
@@ -138,6 +139,7 @@ function App() {
           )}
         </div>
       </div>
+      <SpeedInsights />
     </div>
   );
 }
